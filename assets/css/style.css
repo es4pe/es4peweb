@@ -20,6 +20,13 @@ h4 {
   font-family: "Raleway", sans-serif;
 }
 
+    @media (max-width: 768px) {
+        .img-fluid {
+            display: none;
+        }
+    }
+
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
