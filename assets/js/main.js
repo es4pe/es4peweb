@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function() {
+  var button = document.querySelector('.downloadpage');
+  var buttonPosition = button.getBoundingClientRect().top;
+  var screenHeight = window.innerHeight;
+  
+  if (buttonPosition < screenHeight - 100) { // Когда кнопка в поле видимости
+    button.classList.add('visible');
+  }
+});
+
+
 (function() {
   "use strict";
 

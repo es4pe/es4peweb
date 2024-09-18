@@ -128,21 +128,22 @@ form .input-field:first-child {
 }
 
 form input[type="submit"] {
+    color: black;
     margin-top: 2rem;
     padding: 0.4rem;
     width: 100%;
-    background-color: black;
+    background-color: white;
+    border: 2px solid black; /* Черная рамка */
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
     font-size: 0.9rem;
     font-weight: 300;
-    border-radius: 4px;
     transition: all 0.3s ease;
-    border: none;
 }
 
 form input[type="submit"]:hover {
-    letter-spacing: 0.5px;
+background-color: black;
+  color: white; /* Белый текст при наведении */
     box-shadow: 0 0 7px 2px gray;
     transition: box-shadow 0.3s ease;
 }

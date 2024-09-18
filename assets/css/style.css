@@ -2,6 +2,40 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+.containerdownloadpage {
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  margin-top:50px;
+}
+
+.downloadpage {
+  background-color: white; /* Белый фон */
+  color: black; /* Черный текст */
+  font-size: 18px; /* Увеличенный размер шрифта */
+  padding: 20px 40px; /* Увеличенные отступы внутри кнопки */
+  border: 2px solid black; /* Черная рамка */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0; /* Кнопка скрыта до анимации */
+  transform: translateY(100px); /* Начальная позиция ниже */
+  transition: opacity 1.0s ease, transform 1.0s ease; /* Плавная анимация */
+}
+
+.downloadpage.visible {
+  opacity: 1; /* Кнопка становится видимой */
+  transform: translateY(0); /* Плавно перемещается на место */
+}
+
+.downloadpage:hover {
+    box-shadow: 0 0 7px 2px gray;
+  transition: box-shadow 0.3s ease;
+  background-color: black; /* Черный фон при наведении */
+  color: white; /* Белый текст при наведении */
+}
+
+
 
 a {
   color: white;
